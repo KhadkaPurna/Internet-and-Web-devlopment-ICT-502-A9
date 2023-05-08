@@ -1,0 +1,480 @@
+<!-- This Design is Motiveated and Inspired By w3schools. All the content in this design is instructed by the tutorials provided by the platform which is great for learning puropose. -->
+<!-- The <!DOCTYPE html> tag in HTML specifies the document type and version and is required for the web page to be rendered correctly by the browser. -->
+<!DOCTYPE html>
+<!-- The "html lang='en'" tag in HTML is used to specify the language of the content on a webpage, in this case, English. -->
+<html lang="en">
+  <!-- The <head> tag in HTML is used to include metadata and other information about the webpage that is not visible to the user. -->
+  <head>
+    <!-- Meta tags in HTML provide important information about a webpage, such as the title, description, and keywords, to help search engines and other programs understand the content of the page -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS sheet provided by the W3schools for better design and quality of the design -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- This link tag is referencing the Font Awesome stylesheet, allowing for the use of its extensive library of scalable icons in your web design. -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- This tag is used to link the HTML document with an external animation sheet from external source. -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- This tag is used to link the HTML document with an external stylesheet named "style.css". -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Personal Trainer</title>
+  </head>
+  <!-- The <body> tag in HTML is used to define the main content of a web page. -->
+  <body>
+    <!-- This is a div element that will contain a section of the webpage. -->
+    <div>
+      <!-- This is the navbar section which contains links to different pages of the website. It is positioned at the top of the page and styled using CSS. The navbar is designed to be responsive, so it will adjust to fit different screen sizes. -->
+      <div class="w3-top w3-text-white w3-black">
+        <!-- The "class" attribute in HTML is used to define a class or group of elements that share common characteristics for styling or scripting purposes. -->
+        <div class="w3-bar">
+          <!-- The <a> tag in HTML is used to create a hyperlink to another webpage or resource. -->
+          <a
+            class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+            href="javascript:void(0)"
+            onclick="myFunction()"
+            title="Toggle Navigation Menu"
+            ><i class="fa fa-bars"></i
+          ></a>
+          <!-- The "href" attribute in HTML is used to specify the URL or web address that a link should direct to. -->
+          <a href="#home" class="w3-bar-item w3-button w3-padding-large"
+            >HOME</a
+          >
+          <a
+            href="#about"
+            class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+            >ABOUT</a
+          >
+          <a
+            href="#service"
+            class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+            >SERVICE</a
+          >
+          <a
+            href="#testimony"
+            class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+            >TESTIMONY</a
+          >
+          <a
+            href="#contact"
+            class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+            >CONTACT</a
+          >
+        </div>
+      </div>
+
+      <!-- This navbar is optimized for small screens. The onclick attribute can be removed to ensure that the navbar always remains on top of the content, regardless of which links are clicked. -->
+      <div
+        id="navDemo"
+        class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top"
+        style="margin-top: 46px"
+      >
+        <!-- The "id" attribute in HTML is used to uniquely identify an element on a web page and is an essential component for linking to specific content or applying styles via CSS. -->
+        <a
+          href="#about"
+          class="w3-bar-item w3-button w3-padding-large"
+          onclick="myFunction()"
+          >ABOUT</a
+        >
+        <a
+          href="#service"
+          class="w3-bar-item w3-button w3-padding-large"
+          onclick="myFunction()"
+          >SERVICE</a
+        >
+        <a
+          href="#testimony"
+          class="w3-bar-item w3-button w3-padding-large"
+          onclick="myFunction()"
+          >TESTIMONY</a
+        >
+        <a
+          href="#contact"
+          class="w3-bar-item w3-button w3-padding-large"
+          onclick="myFunction()"
+          >CONTACT</a
+        >
+      </div>
+    </div>
+    <!-- The section tag in HTML is used to group together related content, typically with a heading. It's a semantic tag that helps describe the structure and meaning of a web page, making it easier for search engines and screen readers to understand. -->
+    <section id="home">
+      <div class="hero">
+        <div class="hero-text">
+          <!-- The <h1> tag in HTML is used to indicate the main heading of a webpage. -->
+          <h1>
+            Move Your Body,<br />
+            Shape Your Future
+          </h1>
+        </div>
+      </div>
+    </section>
+    <!-- The <main> tag in HTML is used to identify the main content area of a webpage. -->
+    <main>
+      <div
+        class="about"
+        id="about"
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
+        <div>
+          <h2 class="title">Get to Know me</h2>
+          <div class="about-main">
+            <div></div>
+            <div class="about-text">
+              <!-- The <br> tag in HTML creates a line break, allowing content to be displayed on separate lines. -->
+              <h3>I'm Purna <br />Personal Trainer</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempore, mollitia ex similique ea sit fuga dolores autem omnis
+                beatae iste voluptatem magni saepe .
+              </p>
+              <div style="margin-top: 40px">
+                <span class="w3-text-white social">
+                  <!-- The "p" tag in HTML is used to define a paragraph of text. -->
+                  <p>Follow Me on Social media</p>
+                  <div class="w3-margin-top">
+                    <a href="#">
+                      <!-- The "i" tag in HTML is commonly used to represent icons and should be used with an appropriate class or style to ensure consistent display across different devices and browsers. -->
+                      <i
+                        class="fa fa-facebook-official w3-hover-opacity icons"
+                      ></i
+                    ></a>
+                    <a href="#"
+                      ><i class="fa fa-instagram w3-hover-opacity icons"></i
+                    ></a>
+                    <a href="#"
+                      ><i class="fa fa-snapchat w3-hover-opacity icons"></i
+                    ></a>
+                    <a href="#"
+                      ><i class="fa fa-pinterest-p w3-hover-opacity icons"></i
+                    ></a>
+                    <a href="#"
+                      ><i class="fa fa-twitter w3-hover-opacity icons"></i
+                    ></a>
+                    <a href="#"
+                      ><i class="fa fa-linkedin w3-hover-opacity icons"></i
+                    ></a>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="service"
+        id="service"
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
+        <h2 class="title">__Service</h2>
+
+        <div class="card">
+          <div class="card-list">
+            <div class="card-image">
+              <!-- The <img> tag in HTML is used to embed an image into a web page. -->
+              <img src="services_1.jpg" alt="Services" />
+              <!-- The "src" attribute in HTML is used to specify the URL of the external file that needs to be embedded in the current document, such as an image, audio, or video file. -->
+              <!-- The "alt" attribute in HTML is a concise and essential way to describe the content of an image for accessibility purposes. -->
+            </div>
+            <div class="card-text">
+              <h4>Weight Lifting</h4>
+              <p>$20/Month</p>
+              <a href="#join">
+                <!-- The <style> attribute in HTML is used to add inline styles to an individual element. -->
+                <button
+                  class="w3-btn w3-red w3-margin-top w3-round"
+                  style="width: 100%"
+                >
+                  Join
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="card-list">
+            <div class="card-image">
+              <img src="services_2.jpg" alt="Services" />
+            </div>
+            <div class="card-text">
+              <h4>Bodybuilding</h4>
+              <p>$10/Month</p>
+              <a href="#join">
+                <!-- The <button> tag in HTML is used to create interactive buttons that users can click on to trigger an action. -->
+                <button
+                  class="w3-btn w3-red w3-margin-top w3-round"
+                  style="width: 100%"
+                >
+                  Join
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="card-list">
+            <div class="card-image">
+              <img src="services_3.jpg" alt="Services" />
+            </div>
+            <div class="card-text">
+              <h4>Functional Fitness</h4>
+              <p>$40/Month</p>
+              <a href="#join">
+                <button
+                  class="w3-btn w3-red w3-margin-top w3-round"
+                  style="width: 100%"
+                >
+                  Join
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="testimony"
+        id="testimony"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
+        <h2 class="title">__ What They say about us</h2>
+
+        <div class="testimony-main">
+          <div class="testimony-image">
+            <img src="wts_1.jpg" alt="What they say about" />
+          </div>
+          <div class="testimony-text">
+            <h3>Trenton L. Embree</h3>
+            <p style="font-style: italic">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus magni, minus saepe exercitationem quis odio molestiae
+              eveniet fuga suscipit sequi totam accusantium inventore voluptas
+              illum beatae, voluptate quo? Accusantium, maiores."
+            </p>
+          </div>
+        </div>
+        <div class="testimony-main">
+          <div class="testimony-image">
+            <img src="wts_2.jpg" alt="What they say about" />
+          </div>
+          <div class="testimony-text">
+            <h3>Amanda E. Uren</h3>
+            <p style="font-style: italic">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus magni, minus saepe exercitationem quis odio molestiae
+              eveniet fuga suscipit sequi totam accusantium inventore voluptas
+              illum beatae, voluptate quo? Accusantium, maiores."
+            </p>
+          </div>
+        </div>
+        <div class="testimony-main">
+          <div class="testimony-image">
+            <img src="wts_3.jpg" alt="What they say about" />
+          </div>
+          <div class="testimony-text">
+            <h3>Heather J. Hawker</h3>
+            <p style="font-style: italic">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus magni, minus saepe exercitationem quis odio molestiae
+              eveniet fuga suscipit sequi totam accusantium inventore voluptas
+              illum beatae, voluptate quo? Accusantium, maiores."
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact" id="join" data-aos="fade-down">
+        <h2 class="title">__ Join Us</h2>
+        <div class="contact-main">
+          <div class="contact-form">
+            <!-- The <form> tag in HTML is used to create a form for user input on a webpage. -->
+            <form>
+              <div class="name">
+                <!-- The <input> tag is a fundamental HTML element used to create interactive forms and collect user input. -->
+                <input
+                  class="input name-list"
+                  type="text"
+                  placeholder="First Name*"
+                />
+                <!-- The "placeholder" attribute in HTML is used to provide a hint or example text for the user to input in a form field. -->
+                <input
+                  class="input name-list"
+                  type="text"
+                  placeholder="Last Name*"
+                />
+              </div>
+              <!-- The "type" attribute in HTML is used to specify the type of content or input field that is being used, such as text, email, or password. -->
+              <input
+                id="email"
+                class="input"
+                type="text"
+                placeholder="Email*"
+              />
+              <!-- The <textarea> tag in HTML is used to create a multi-line input field for text. -->
+              <textarea
+                id="email"
+                class="input"
+                minlength="100"
+                placeholder="Your Message*"
+                required
+              ></textarea>
+              <button class="w3-btn w3-red w3-round">Send</button>
+            </form>
+          </div>
+
+          <div class="contact-image">
+            <img src="join_us.jpg" alt="Join Us" />
+          </div>
+        </div>
+      </div>
+      <!-- Body Mass Calculation -->
+      <div class="contact" id="join">
+        <h2 class="title">__ Body Mass Index (BMI) Calculation</h2>
+        <div class="contact-main">
+          <div class="contact-form">
+            <form>
+              <div class="name">
+                <input
+                  id="weight"
+                  class="input name-list"
+                  type="text"
+                  placeholder="Weight (in KG)*"
+                />
+                <input
+                  id="height"
+                  class="input name-list"
+                  type="text"
+                  placeholder="Height (in CM)*"
+                />
+              </div>
+              <!-- The <table> tag in HTML is used to create a structured grid of rows and columns to display data in an organized manner. -->
+              <table class="styled-table">
+                <!-- The <thead> tag in HTML is used to define the header of a table. -->
+                <thead>
+                  <!-- The <tr> tag in HTML is used to define a row in a table. -->
+                  <tr>
+                    <!-- The <th> tag in HTML is used to define a header cell in a table. -->
+                    <th>Height</th>
+                    <th>Weight</th>
+                    <th>BMI</th>
+                  </tr>
+                </thead>
+                <!-- The <tbody> tag in HTML is used to group the body content in a table. -->
+                <tbody>
+                  <tr class="active-row">
+                    <!-- The <td> tag in HTML is used to define a table cell in a table. -->
+                    <td id="weight_result">30</td>
+                    <td id="height_result">130</td>
+                    <td id="bmi_result">17.8</td>
+                  </tr>
+                  <!-- and so on... -->
+                </tbody>
+              </table>
+              <!-- The "hidden" attribute in HTML is used to hide an element from the user interface without removing it from the HTML structure. -->
+              <!-- The "disable" attribute in HTML is used to make a form element unselectable and non-editable, preventing the user from interacting with it. -->
+              <input
+                id="bmi"
+                class="input"
+                type="text"
+                placeholder="BMI*"
+                hidden
+                disabled
+              />
+              <button
+                type="button"
+                onclick="calculateBMI()"
+                class="w3-btn w3-red w3-round"
+              >
+                Calculate
+              </button>
+            </form>
+          </div>
+
+          <div class="contact-image">
+            <img src="gtkm_1.jpg" alt="Join Us" />
+          </div>
+        </div>
+      </div>
+      <div class="contact-address" id="contact">
+        <h2 class="title">__ GET IN TOUCH</h2>
+        <div class="contact-address-list">
+          <div class="contact-list">
+            <h4>location</h4>
+            <p>Lorem, Lipum, NJ 01234</p>
+            <p>Lorem, Lipum, NJ 01234</p>
+            <p>Lorem, Lipum, NJ 01234</p>
+          </div>
+          <div class="contact-list">
+            <h4>Opening Hour</h4>
+            <p>Monday- Saturday: 8am -9:30pm</p>
+            <p>Sunday:8am- 9pm</p>
+          </div>
+          <div class="contact-list">
+            <h4>Say hello</h4>
+            <p>
+              <i
+                class="fa fa-phone"
+                style="margin-right: 8px; font-size: 20px"
+              ></i
+              >123-456-7890
+            </p>
+            <p>
+              <i
+                class="fa fa-phone"
+                style="margin-right: 8px; font-size: 20px"
+              ></i
+              >123-456-7890
+            </p>
+            <p>
+              <i
+                class="fa fa-envelope"
+                style="margin-right: 5px; font-size: 20px"
+              ></i
+              >lorem@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- This script is used to link the HTML document with an external animation scripts from external source. -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- The <script> tag in HTML is used to define a client-side script, such as JavaScript, which is executed by the browser. -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+
+      function calculateBMI() {
+        const weightInput = document.getElementById("weight");
+        const heightInput = document.getElementById("height");
+
+        const weight_result = document.getElementById("weight_result");
+        const height_result = document.getElementById("height_result");
+        const bmi_result = document.getElementById("bmi_result");
+
+        const weight = weightInput.value;
+        const height = heightInput.value / 100; // convert height from cm to m
+
+        const bmi = weight / (height * height);
+        weight_result.textContent = weightInput.value;
+        height_result.textContent = heightInput.value;
+        bmi_result.textContent = bmi.toFixed(1);
+      }
+    </script>
+  </body>
+</html>
